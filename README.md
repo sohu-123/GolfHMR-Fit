@@ -43,7 +43,7 @@ Extensive experiments demonstrate that GolfHMR‑Fit reduces hand‑specific MPJ
 
 ```bash
 # Clone repository (replace with your actual URL)
-git clone https://github.com/YOUR_USERNAME/GolfHMR-Fit.git
+git clone https://github.com/sohu-123/GolfHMR-Fit.git
 cd GolfHMR-Fit
 
 # Create conda environment
