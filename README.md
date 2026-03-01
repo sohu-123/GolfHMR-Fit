@@ -57,7 +57,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 # Install dependencies
 pip install -r requirements.txt
 
-
+### QuickStart
 python demo.py \
     --image_folder <path_to_images> \
     --output_folder <path_to_output> \
