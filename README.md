@@ -25,7 +25,7 @@ Below we show a qualitative comparison of the reconstructed 3D golf swing. The v
 - **Bottom row**: Reconstruction by the baseline **3D‑SAM‑Body** [1].
 
 
-![3D Golf Swing Comparison](./cc.gif)
+![3D Golf Swing Comparison](./cc2.gif)
 
 ### Key Contributions
 
