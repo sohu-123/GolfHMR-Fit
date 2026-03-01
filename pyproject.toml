@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sam-3d-body"
+version = "1.0.0"
+description = "SAM 3D Body: Robust Full-Body Human Mesh Recovery"
+readme = "README_NEW.md"
+requires-python = ">=3.9"
+license = {text = "SAM License"}
+authors = [
+    {name = "Xitong Yang", email = "xitongyang@meta.com"},
+    {name = "Devansh Kukreja"},
+    {name = "Don Pinkus"},
+    {name = "Anushka Sagar"},
+    {name = "Taosha Fan"},
+    {name = "Jinhyung Park"},
+    {name = "Soyong Shin"},
+    {name = "Jinkun Cao"},
+    {name = "Jiawei Liu"},
+    {name = "Nicolas Ugrinovic"},
+    {name = "Matt Feiszli"},
+    {name = "Jitendra Malik"},
+    {name = "Piotr Dollar"},
+    {name = "Kris Kitani"}
+]
+
+keywords = [
+    "human mesh recovery",
+    "pose estimation",
+    "3d reconstruction",
+    "segmentation",
+    "computer vision"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Computer Vision",
+]
+
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "pytorch-lightning>=2.0.0",
+    "pyrender>=0.1.45",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "scikit-image>=0.21.0",
+    "einops>=0.7.0",
+    "timm>=0.9.0",
+    "hydra-core>=1.3.0",
+    "huggingface_hub>=0.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "isort>=5.12.0",
+]
+
+moge = ["git+https://github.com/microsoft/MoGe.git"]
+sam3 = ["git+https://github.com/facebookresearch/sam3.git"]
+detectron2 = ["git+https://github.com/facebookresearch/detectron2.git@a1ce2f9"]
+all = [
+    "git+https://github.com/microsoft/MoGe.git",
+    "git+https://github.com/facebookresearch/sam3.git",
+    "git+https://github.com/facebookresearch/detectron2.git@a1ce2f9",
+]
+
+[project.urls]
+Homepage = "https://github.com/facebookresearch/sam-3d-body"
+Documentation = "https://github.com/facebookresearch/sam-3d-body#readme"
+Repository = "https://github.com/facebookresearch/sam-3d-body.git"
+Issues = "https://github.com/facebookresearch/sam-3d-body/issues"
+Paper = "https://ai.meta.com/research/publications/sam-3d-body-robust-full-body-human-mesh-recovery/"
+Blog = "https://ai.meta.com/blog/sam-3d/"
+Dataset = "https://huggingface.co/datasets/facebook/sam-3d-body-dataset"
+Demo = "https://www.aidemos.meta.com/segment-anything/editor/convert-body-to-3d"
+
+[tool.setuptools]
+packages = ["sam_3d_body", "tools"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
