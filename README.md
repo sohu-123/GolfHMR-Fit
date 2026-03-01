@@ -16,6 +16,20 @@
 
 **GolfHMR-Fit** is a targeted fine‑tuning framework designed to enhance monocular 3D human mesh recovery (HMR) for the challenging domain of golf swing analysis. Built upon the foundation model [3D‑SAM‑Body](https://github.com/facebookresearch/sam-3d-body), our approach introduces three key innovations to address the critical issues of hand separation artifacts, occlusion sensitivity, and temporal jitter inherent in general‑purpose HMR methods when applied to high‑speed sports.
 
+## Results Visualization
+
+Below we show a qualitative comparison of the reconstructed 3D golf swing. The video is organized into three rows:
+
+- **Top row**: Original input video (down‑the‑line view).  
+- **Middle row**: Our **GolfHMR‑Fit** reconstruction.  
+- **Bottom row**: Reconstruction by the baseline **3D‑SAM‑Body** [1].
+
+```html
+<video width="100%" controls>
+  <source src="./cc.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Key Contributions
 
 1. **Physics‑Constrained Priors**  
