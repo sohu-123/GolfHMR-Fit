@@ -24,11 +24,8 @@ Below we show a qualitative comparison of the reconstructed 3D golf swing. The v
 - **Middle row**: Our **GolfHMR‑Fit** reconstruction.  
 - **Bottom row**: Reconstruction by the baseline **3D‑SAM‑Body** [1].
 
-```html
-<video width="100%" controls>
-  <source src="./cc.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+![3D Golf Swing Comparison](./cc.gif)
 
 ### Key Contributions
 
