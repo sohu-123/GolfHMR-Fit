@@ -26,6 +26,7 @@ Below we show a qualitative comparison of the reconstructed 3D golf swing. The v
 
 
 ![3D Golf Swing Comparison](./cc2.gif)
+<img src="./cc.gif" width="70%" alt="3D Golf Swing Comparison">
 
 ### Key Contributions
 
